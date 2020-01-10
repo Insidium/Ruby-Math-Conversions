@@ -1,12 +1,13 @@
-def decimal2binary(decimal)
-    @decimal = decimal
+def decimal_binary(decimal)
+    base_ten = decimal
+    base_two = []
 
-    until decimal < 2 do
-        decimal / 2
-        return decimal.to_i
+    until decimal < 1 do
+        base_two.push(decimal % 2)
+        decimal = decimal / 2
     end
-
+    return base_two.reverse
 end
 
-p decimal2binary(34)
+p decimal_binary(12)
 
