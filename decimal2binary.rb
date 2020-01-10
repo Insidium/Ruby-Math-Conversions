@@ -1,4 +1,4 @@
-def decimal_binary(decimal)
+def decimal_to_binary(decimal)
     base_ten = decimal
     base_two = []
 
@@ -9,5 +9,5 @@ def decimal_binary(decimal)
     return base_two.reverse
 end
 
-p decimal_binary(12)
+p decimal_to_binary(28)
 
